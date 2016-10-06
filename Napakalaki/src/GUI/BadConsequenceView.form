@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="99" green="99" red="99" type="rgb"/>
+    </Property>
+    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+        <TitledBorder title="Mal Rollo"/>
+      </Border>
+    </Property>
+    <Property name="toolTipText" type="java.lang.String" value=""/>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="specificVisibleLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="specificHiddenLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="specificHiddenTreasures" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="levelsLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="deathLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="death" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="levels" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="nVisibleLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nHiddenLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="nHiddenTreasures" pref="78" max="32767" attributes="0"/>
+                                  <Component id="nVisibleTreasures" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="specificVisibleTreasures" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+          <Group type="102" attributes="0">
+              <Component id="textLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="337" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="textLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="48" max="-2" attributes="0"/>
+              <EmptySpace pref="13" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="levelsLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="levels" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="nVisibleLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="nVisibleTreasures" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="deathLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="death" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="nHiddenLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="nHiddenTreasures" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="27" max="32767" attributes="0"/>
+              <Component id="specificVisibleLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="specificVisibleTreasures" min="-2" pref="46" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="specificHiddenLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="specificHiddenTreasures" min="-2" pref="49" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="textLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Verdana" size="13" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Descripcion"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="levelsLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Verdana" size="13" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Niveles Perdidos"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="levels">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="text" type="java.lang.String" value="niveles"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="death">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="text" type="java.lang.String" value="muerte"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deathActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="deathLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Verdana" size="13" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#xbf;Te Mata?"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="nVisibleTreasures">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="text" type="java.lang.String" value="nVisible"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nVisibleTreasuresActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="nVisibleLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Verdana" size="13" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Tesoros Visibles"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="nHiddenLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Verdana" size="13" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Tesoros Ocultos"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="nHiddenTreasures">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="text" type="java.lang.String" value="nVisible"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="specificVisibleTreasures">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="text" type="java.lang.String" value="specificVisibleTreasures"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="specificHiddenTreasures">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="text" type="java.lang.String" value="specificHiddenTreasures"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="specificVisibleLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Verdana" size="13" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Tipos de Tesoros Visibles"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="specificHiddenLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Verdana" size="13" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Tipos de Tesoros Ocultos"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="text">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="columns" type="int" value="1"/>
+            <Property name="lineWrap" type="boolean" value="true"/>
+            <Property name="rows" type="int" value="3"/>
+            <Property name="tabSize" type="int" value="2"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

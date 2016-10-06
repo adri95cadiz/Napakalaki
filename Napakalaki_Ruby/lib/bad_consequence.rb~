@@ -1,0 +1,75 @@
+# To change this license header, choose License Headers in Project Properties.
+# To change this template file, choose Tools | Templates
+# and open the template in the editor.
+
+module Napakalaki
+  
+    class BadConsequence 
+      
+        attr_reader :text, :levels, :death, :specific_hidden_treasures, :specific_visible_treasures
+        attr_accessor :n_visible_treasures, :n_hidden_treasures
+        
+        def initialize(nombre, level, n_visible_treasure, n_hidden_treasure, t_visible, t_hidden, muerte)
+            @text = nombre
+            @levels = level
+            @n_visible_treasures = n_visible_treasure
+            @n_hidden_treasures = n_hidden_treasure
+            @death = muerte  
+            @specific_hidden_treasures = t_hidden.clone
+            @specific_visible_treasures = t_visible.clone
+        end
+        def self.new_level(nombre, level, n_visible_treasure, n_hidden_treasure)
+            new_obj=allocate
+            new_obj.send(:initialize,nombre,level,n_visible_treasure,n_hidden_treasure,[],[],false)
+            new_obj
+        end            
+            
+        def self.new_death(texto, muerte)
+            new_obj=allocate  
+            new_obj.send(:initialize,texto,0,0,0,[],[],muerte)
+            new_obj
+        end
+                
+        def self.new_treasure(nombre, level, t_visible, t_hidden)
+            new_obj=allocate
+            new_obj.send(:initialize,nombre,level,0,0,t_visible,t_hidden,false)
+            new_obj
+        end
+        
+        def is_empty()
+          empty = false
+          empty = true if @levels == 0 && @n_hidden_treasures == 0 && @n_visible_treasures == 0 && @specific_hidden_treasures == [] && @specific_hidden_treasures == []
+          return empty
+        end
+        
+        def substract_visible_treasures(t)
+          @specific_visible_treasures.delete(t.type());
+        end
+        
+        def substract_hidden_treasures(t)
+          @specific_hidden_treasures.delete(t.type());
+        end
+        
+        def adjust_to_fit_treasure_list(v, h)          
+          t_visible = Array.new
+          t_hidden = Array.new
+          v.each do |t| 
+            t_visible << t.type if @specific_visible_treasures.index(t.type) != nil
+          end
+          h.each do |t| 
+            t_hidden << t.type() if @specific_hidden_treasures.index(t.type) != nil
+          end
+          bc = BadConsequence.new_treasure(@text, 0, t_visible, t_hidden)
+          return bc          
+        end
+        
+        def my_bad_consequence_is_death()
+          return @death
+        end
+        
+        def to_s()
+          "#{@text}. Niveles:  #{@levels}. Tesoros Visibles: #{@n_visible_treasures} #{@specific_visible_treasures.to_s()}. Tesoros Ocultos: #{@n_hidden_treasures} #{@specific_hidden_treasures.to_s()}. Muerte: #{@death}."  
+        end
+    
+    end
+end
